@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C4C8D80243D658F0000F68A /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C8D7F243D658F0000F68A /* HomePageView.swift */; };
+		3C4C8D82243D65A00000F68A /* MyClassPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C8D81243D65A00000F68A /* MyClassPageView.swift */; };
+		3C4C8D84243D7C6C0000F68A /* MyClassInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C8D83243D7C6C0000F68A /* MyClassInformationView.swift */; };
+		3C4E90AF24404F56000860C3 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4E90AE24404F56000860C3 /* TabBarItem.swift */; };
+		3C4E90B124405012000860C3 /* TabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4E90B024405012000860C3 /* TabBarItemView.swift */; };
+		3C4E90B324405356000860C3 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4E90B224405356000860C3 /* TabBarView.swift */; };
 		3C5F8F15243AE90D007012A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F8F14243AE90D007012A4 /* AppDelegate.swift */; };
 		3C5F8F17243AE90D007012A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F8F16243AE90D007012A4 /* SceneDelegate.swift */; };
 		3C5F8F19243AE90D007012A4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F8F18243AE90D007012A4 /* ContentView.swift */; };
@@ -15,6 +21,10 @@
 		3C5F8F21243AE912007012A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C5F8F1F243AE912007012A4 /* LaunchScreen.storyboard */; };
 		3C5F8F2C243AE912007012A4 /* SwiftUIPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F8F2B243AE912007012A4 /* SwiftUIPracticeTests.swift */; };
 		3C5F8F37243AE912007012A4 /* SwiftUIPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F8F36243AE912007012A4 /* SwiftUIPracticeUITests.swift */; };
+		3C5F8F45243C1AA6007012A4 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F8F44243C1AA6007012A4 /* CircleImage.swift */; };
+		3C5F8F47243C2892007012A4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F8F46243C2892007012A4 /* MapView.swift */; };
+		3C9C99AC2440620B0084393A /* ListFristPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C99AB2440620B0084393A /* ListFristPageView.swift */; };
+		3C9C99AE2440621B0084393A /* EditFristPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C99AD2440621B0084393A /* EditFristPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C4C8D7F243D658F0000F68A /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		3C4C8D81243D65A00000F68A /* MyClassPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassPageView.swift; sourceTree = "<group>"; };
+		3C4C8D83243D7C6C0000F68A /* MyClassInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassInformationView.swift; sourceTree = "<group>"; };
+		3C4E90AE24404F56000860C3 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		3C4E90B024405012000860C3 /* TabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
+		3C4E90B224405356000860C3 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		3C5F8F11243AE90D007012A4 /* SwiftUIPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C5F8F14243AE90D007012A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C5F8F16243AE90D007012A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,10 @@
 		3C5F8F32243AE912007012A4 /* SwiftUIPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C5F8F36243AE912007012A4 /* SwiftUIPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeUITests.swift; sourceTree = "<group>"; };
 		3C5F8F38243AE912007012A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C5F8F44243C1AA6007012A4 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = CircleImage.swift; sourceTree = "<group>"; usesTabs = 0; };
+		3C5F8F46243C2892007012A4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		3C9C99AB2440620B0084393A /* ListFristPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFristPageView.swift; sourceTree = "<group>"; };
+		3C9C99AD2440621B0084393A /* EditFristPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFristPageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +96,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C4C8D7D243D65420000F68A /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				3C4C8D7F243D658F0000F68A /* HomePageView.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		3C4C8D7E243D65520000F68A /* MyClassPage */ = {
+			isa = PBXGroup;
+			children = (
+				3C4C8D81243D65A00000F68A /* MyClassPageView.swift */,
+				3C4C8D83243D7C6C0000F68A /* MyClassInformationView.swift */,
+			);
+			path = MyClassPage;
+			sourceTree = "<group>";
+		};
+		3C4E90AD24404F32000860C3 /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				3C4E90AE24404F56000860C3 /* TabBarItem.swift */,
+				3C4E90B024405012000860C3 /* TabBarItemView.swift */,
+				3C4E90B224405356000860C3 /* TabBarView.swift */,
+			);
+			path = TabBarView;
+			sourceTree = "<group>";
+		};
 		3C5F8F08243AE90D007012A4 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +146,11 @@
 		3C5F8F13243AE90D007012A4 /* SwiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
+				3C4E90AD24404F32000860C3 /* TabBarView */,
+				3C4C8D7D243D65420000F68A /* HomePage */,
+				3C9C99A92440612F0084393A /* ListViewPage */,
+				3C9C99AA2440616E0084393A /* EditPage */,
+				3C4C8D7E243D65520000F68A /* MyClassPage */,
 				3C5F8F14243AE90D007012A4 /* AppDelegate.swift */,
 				3C5F8F16243AE90D007012A4 /* SceneDelegate.swift */,
 				3C5F8F18243AE90D007012A4 /* ContentView.swift */,
@@ -106,6 +158,8 @@
 				3C5F8F1F243AE912007012A4 /* LaunchScreen.storyboard */,
 				3C5F8F22243AE912007012A4 /* Info.plist */,
 				3C5F8F1C243AE912007012A4 /* Preview Content */,
+				3C5F8F44243C1AA6007012A4 /* CircleImage.swift */,
+				3C5F8F46243C2892007012A4 /* MapView.swift */,
 			);
 			path = SwiftUIPractice;
 			sourceTree = "<group>";
@@ -134,6 +188,22 @@
 				3C5F8F38243AE912007012A4 /* Info.plist */,
 			);
 			path = SwiftUIPracticeUITests;
+			sourceTree = "<group>";
+		};
+		3C9C99A92440612F0084393A /* ListViewPage */ = {
+			isa = PBXGroup;
+			children = (
+				3C9C99AB2440620B0084393A /* ListFristPageView.swift */,
+			);
+			path = ListViewPage;
+			sourceTree = "<group>";
+		};
+		3C9C99AA2440616E0084393A /* EditPage */ = {
+			isa = PBXGroup;
+			children = (
+				3C9C99AD2440621B0084393A /* EditFristPageView.swift */,
+			);
+			path = EditPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +338,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C5F8F15243AE90D007012A4 /* AppDelegate.swift in Sources */,
+				3C4E90B324405356000860C3 /* TabBarView.swift in Sources */,
+				3C5F8F45243C1AA6007012A4 /* CircleImage.swift in Sources */,
+				3C9C99AE2440621B0084393A /* EditFristPageView.swift in Sources */,
+				3C4C8D82243D65A00000F68A /* MyClassPageView.swift in Sources */,
+				3C4E90B124405012000860C3 /* TabBarItemView.swift in Sources */,
+				3C4E90AF24404F56000860C3 /* TabBarItem.swift in Sources */,
+				3C5F8F47243C2892007012A4 /* MapView.swift in Sources */,
+				3C4C8D84243D7C6C0000F68A /* MyClassInformationView.swift in Sources */,
 				3C5F8F17243AE90D007012A4 /* SceneDelegate.swift in Sources */,
+				3C4C8D80243D658F0000F68A /* HomePageView.swift in Sources */,
+				3C9C99AC2440620B0084393A /* ListFristPageView.swift in Sources */,
 				3C5F8F19243AE90D007012A4 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
