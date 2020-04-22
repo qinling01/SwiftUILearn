@@ -81,8 +81,8 @@ struct TabViews: View {
 
 struct ContentView: View {
     var body: some View {
-//        AppView()
-        TabViews()
+        AppView()
+//        TabViews()
     }
 }
 

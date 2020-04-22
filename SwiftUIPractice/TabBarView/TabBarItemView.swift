@@ -19,7 +19,10 @@ struct TabBarItemView: View {
                 .foregroundColor(isSelected ? item.color : .primary)
             Text(item.title)
                 .foregroundColor(isSelected ? item.color : .primary)
-                .fontWeight(.semibold)
+                .font(.system(size: 12))
+//                .padding(.top, 5.0)
+                //baselineOffset--设置垂直方向偏移值
+                .baselineOffset(-5.0)
         }
         .padding()
     }

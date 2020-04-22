@@ -13,14 +13,19 @@ struct TabBarView: View {
     let items: [TabBarItem]
     
     var body: some View {
-        HStack {
-            ForEach(0 ..< items.count) {index in
-                self.itemView(at: index)
-                if index != self.items.count - 1 {
-                    Spacer()
+        VStack {
+//            Color.purple.edgesIgnoringSafeArea(.all)
+            Divider()
+            HStack {
+                ForEach(0 ..< items.count) {index in
+                    self.itemView(at: index)
+                    if index != self.items.count - 1 {
+                        Spacer()
+                    }
                 }
             }
-        }.padding()
+            .padding(EdgeInsets(top: 0.0, leading: 10.0, bottom: -10.0, trailing: 10.0))
+        }
     }
     
     func itemView(at index: Int) -> some View {

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044CCCD2244EFF20001C1CB6 /* TextCopyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CCCD1244EFF20001C1CB6 /* TextCopyView.swift */; };
+		044E6FD724501BF000B68BBE /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E6FD624501BF000B68BBE /* HomeListView.swift */; };
+		044E6FDB24501F6C00B68BBE /* explore_collection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044E6FD924501F6C00B68BBE /* explore_collection@2x.png */; };
+		044E6FDC24501F6C00B68BBE /* explore_uncollected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044E6FDA24501F6C00B68BBE /* explore_uncollected@2x.png */; };
 		3C4C8D80243D658F0000F68A /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C8D7F243D658F0000F68A /* HomePageView.swift */; };
 		3C4C8D82243D65A00000F68A /* MyClassPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C8D81243D65A00000F68A /* MyClassPageView.swift */; };
 		3C4C8D84243D7C6C0000F68A /* MyClassInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C8D83243D7C6C0000F68A /* MyClassInformationView.swift */; };
@@ -25,6 +29,7 @@
 		3C5F8F47243C2892007012A4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5F8F46243C2892007012A4 /* MapView.swift */; };
 		3C9C99AC2440620B0084393A /* ListFristPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C99AB2440620B0084393A /* ListFristPageView.swift */; };
 		3C9C99AE2440621B0084393A /* EditFristPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9C99AD2440621B0084393A /* EditFristPageView.swift */; };
+		3CEE8FAD244461E200E4F7BB /* TextSettingAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE8FAC244461E200E4F7BB /* TextSettingAttribute.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		044CCCD1244EFF20001C1CB6 /* TextCopyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCopyView.swift; sourceTree = "<group>"; };
+		044E6FD624501BF000B68BBE /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
+		044E6FD924501F6C00B68BBE /* explore_collection@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explore_collection@2x.png"; sourceTree = "<group>"; };
+		044E6FDA24501F6C00B68BBE /* explore_uncollected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explore_uncollected@2x.png"; sourceTree = "<group>"; };
 		3C4C8D7F243D658F0000F68A /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		3C4C8D81243D65A00000F68A /* MyClassPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassPageView.swift; sourceTree = "<group>"; };
 		3C4C8D83243D7C6C0000F68A /* MyClassInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassInformationView.swift; sourceTree = "<group>"; };
@@ -69,6 +78,7 @@
 		3C5F8F46243C2892007012A4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		3C9C99AB2440620B0084393A /* ListFristPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFristPageView.swift; sourceTree = "<group>"; };
 		3C9C99AD2440621B0084393A /* EditFristPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFristPageView.swift; sourceTree = "<group>"; };
+		3CEE8FAC244461E200E4F7BB /* TextSettingAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSettingAttribute.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +106,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044E6FD824501F3900B68BBE /* ImageResources */ = {
+			isa = PBXGroup;
+			children = (
+				044E6FD924501F6C00B68BBE /* explore_collection@2x.png */,
+				044E6FDA24501F6C00B68BBE /* explore_uncollected@2x.png */,
+			);
+			path = ImageResources;
+			sourceTree = "<group>";
+		};
 		3C4C8D7D243D65420000F68A /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				3CEE8FAB244460B100E4F7BB /* Page */,
 				3C4C8D7F243D658F0000F68A /* HomePageView.swift */,
 			);
 			path = HomePage;
@@ -146,6 +166,7 @@
 		3C5F8F13243AE90D007012A4 /* SwiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
+				044E6FD824501F3900B68BBE /* ImageResources */,
 				3C4E90AD24404F32000860C3 /* TabBarView */,
 				3C4C8D7D243D65420000F68A /* HomePage */,
 				3C9C99A92440612F0084393A /* ListViewPage */,
@@ -204,6 +225,16 @@
 				3C9C99AD2440621B0084393A /* EditFristPageView.swift */,
 			);
 			path = EditPage;
+			sourceTree = "<group>";
+		};
+		3CEE8FAB244460B100E4F7BB /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				3CEE8FAC244461E200E4F7BB /* TextSettingAttribute.swift */,
+				044CCCD1244EFF20001C1CB6 /* TextCopyView.swift */,
+				044E6FD624501BF000B68BBE /* HomeListView.swift */,
+			);
+			path = Page;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,8 +341,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044E6FDB24501F6C00B68BBE /* explore_collection@2x.png in Resources */,
 				3C5F8F21243AE912007012A4 /* LaunchScreen.storyboard in Resources */,
 				3C5F8F1E243AE912007012A4 /* Preview Assets.xcassets in Resources */,
+				044E6FDC24501F6C00B68BBE /* explore_uncollected@2x.png in Resources */,
 				3C5F8F1B243AE912007012A4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044CCCD2244EFF20001C1CB6 /* TextCopyView.swift in Sources */,
 				3C5F8F15243AE90D007012A4 /* AppDelegate.swift in Sources */,
 				3C4E90B324405356000860C3 /* TabBarView.swift in Sources */,
 				3C5F8F45243C1AA6007012A4 /* CircleImage.swift in Sources */,
@@ -345,9 +379,11 @@
 				3C4E90B124405012000860C3 /* TabBarItemView.swift in Sources */,
 				3C4E90AF24404F56000860C3 /* TabBarItem.swift in Sources */,
 				3C5F8F47243C2892007012A4 /* MapView.swift in Sources */,
+				3CEE8FAD244461E200E4F7BB /* TextSettingAttribute.swift in Sources */,
 				3C4C8D84243D7C6C0000F68A /* MyClassInformationView.swift in Sources */,
 				3C5F8F17243AE90D007012A4 /* SceneDelegate.swift in Sources */,
 				3C4C8D80243D658F0000F68A /* HomePageView.swift in Sources */,
+				044E6FD724501BF000B68BBE /* HomeListView.swift in Sources */,
 				3C9C99AC2440620B0084393A /* ListFristPageView.swift in Sources */,
 				3C5F8F19243AE90D007012A4 /* ContentView.swift in Sources */,
 			);
@@ -519,6 +555,7 @@
 				DEVELOPMENT_TEAM = Z6CH2ANJK4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -539,6 +576,7 @@
 				DEVELOPMENT_TEAM = Z6CH2ANJK4;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
