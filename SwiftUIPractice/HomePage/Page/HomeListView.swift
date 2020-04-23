@@ -76,46 +76,35 @@ struct HomeListView: View {
             ForEach(dataObj.sectionDataArr) { sectionModel in
 //                Text("Hello")
                 Section(
-                header: HomeListHeaderView(dataObj: self.dataObj, sectionModel: sectionModel),
-                footer: HomeListFooterView()
+                header: HomeListHeaderView(dataObj: self.dataObj, sectionModel: sectionModel)
+//                ,footer: HomeListFooterView()
                 ) {
-                    ForEach(sectionModel.rowModels) { rowModel in
-                        VStack(alignment: .leading){
-                            HStack {
-                                Text(rowModel.title)
-                                Spacer()
-                                Image(rowModel.isLive ? "HomeLive" : "HomeUnLive")
-                                    .onTapGesture {
-                                        rowModel.isLive = !rowModel.isLive
-                                        self.dataObj.objectWillChange.send()
-                                }
-                            }
-                            Text("10:30")
-                                .padding(.top, 5)
+                    if sectionModel.rowShow {
+                        ForEach(sectionModel.rowModels) { rowModel in
+                            HomeListRowView(dataObj: self.dataObj, rowModel: rowModel)
                         }
-                        .padding(.top, 5)
-                        .padding(.bottom, 5)
-                        .deleteDisabled(rowModel.deleteDisabled)
-                        .moveDisabled(rowModel.mobileDisabled)
-                    }
-                    .onDelete { (indexSet) in
-                        print("...执行删除...",indexSet)
-                        sectionModel.rowModels.remove(at: indexSet.first!)
-                        self.dataObj.objectWillChange.send()
-                    }
-                    .onMove { (indexSet, index) in
-                        print("....执行移动....",index)
-                        sectionModel.rowModels.move(fromOffsets: indexSet, toOffset: index)
-                        self.dataObj.objectWillChange.send()
+                        .onDelete { (indexSet) in
+                            print("...执行删除...",indexSet)
+                            sectionModel.rowModels.remove(at: indexSet.first!)
+                            self.dataObj.objectWillChange.send()
+                        }
+                        .onMove { (indexSet, index) in
+                            print("....执行移动....",index)
+                            sectionModel.rowModels.move(fromOffsets: indexSet, toOffset: index)
+                            self.dataObj.objectWillChange.send()
+                        }
                     }
                 }
             }
         }
+//        .listStyle(GroupedListStyle())
         .listStyle(PlainListStyle())
         .navigationBarItems(trailing:
             HStack {
                 Button.init("Add Section") {
-                    print("...... ")
+                    let model = HomeListSectionModel(title: "Header\(self.dataObj.sectionDataArr.count)")
+                    model.deleteDisabled = false
+                    self.dataObj.sectionDataArr.append(model)
                 }
                 EditButton()
                     .foregroundColor(Color.red)
@@ -124,6 +113,32 @@ struct HomeListView: View {
     }
 }
 
+/// ListCell
+struct HomeListRowView: View {
+    @ObservedObject var dataObj: HomeListDate
+    @ObservedObject var rowModel: HomeListRowModel
+    var body: some View {
+        VStack(alignment: .leading){
+            HStack {
+                Text(rowModel.title)
+                Spacer()
+                Image(rowModel.isLive ? "HomeLive" : "HomeUnLive")
+                    .onTapGesture {
+                        self.rowModel.isLive = !self.rowModel.isLive
+                        self.dataObj.objectWillChange.send()
+                }
+            }
+            Text("10:30")
+                .padding(.top, 5)
+        }
+        .padding(.top, 5)
+        .padding(.bottom, 5)
+        .deleteDisabled(rowModel.deleteDisabled)
+        .moveDisabled(rowModel.mobileDisabled)
+    }
+}
+
+/// HeaderView
 struct HomeListHeaderView: View {
     @ObservedObject var dataObj: HomeListDate
     @ObservedObject var sectionModel: HomeListSectionModel
@@ -134,7 +149,16 @@ struct HomeListHeaderView: View {
             
             if !sectionModel.deleteDisabled {
                 Button("Delete Section") {
+                    let index = self.dataObj.sectionDataArr.lastIndex { (model) -> Bool in
+                        if model.id == self.sectionModel.id {
+                            return true
+                        }
+                        return false
+                    }
                     
+                    if let index = index {
+                        self.dataObj.sectionDataArr.remove(at: index)
+                    }
                 }.foregroundColor(Color.red)
             }
             
@@ -143,10 +167,16 @@ struct HomeListHeaderView: View {
                 self.sectionModel.rowModels.append(model)
                 self.dataObj.objectWillChange.send()
             }
+            
+            Button(sectionModel.rowShow ? "Hide" : "Show") {
+                self.sectionModel.rowShow = !self.sectionModel.rowShow
+                self.dataObj.objectWillChange.send()
+            }
         }
     }
 }
 
+/// FooterView
 struct HomeListFooterView: View {
     var body: some View {
         HStack {
