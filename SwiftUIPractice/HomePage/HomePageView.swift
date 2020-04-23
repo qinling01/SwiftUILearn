@@ -19,12 +19,14 @@ enum ViewType {
     case text
     case textCopy
     case homeList
+    case cardAnimation
     case other
 }
 
 let menuData = [Menu(type: .text, title: "Text视图的段落属性", color: .green),
                 Menu(type: .textCopy, title: "TextCopy", color: .blue),
                 Menu(type: .homeList, title: "List", color: .red),
+                Menu(type: .cardAnimation, title: "卡片带动画", color: .red),
                 Menu(type: .other, title: "Other", color: .yellow)]
 
 struct RowView: View {
@@ -50,6 +52,9 @@ struct HomePageView: View {
         }
     }
     
+    /// 分配需要跳转的页面
+    /// - Parameter item: Menu
+    /// - Returns: View
     func rowSelect(_ item: Menu) -> AnyView{
         switch item.type {
         case .text:
@@ -58,6 +63,8 @@ struct HomePageView: View {
             return AnyView(TextCopyView())
         case .homeList:
             return AnyView(HomeListView())
+        case .cardAnimation:
+            return AnyView(CardAnimationView())
         default:
             return AnyView(ListFristPageView())
         }
