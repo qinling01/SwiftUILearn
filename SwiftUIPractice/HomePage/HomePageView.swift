@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import Alamofire
 
 struct Menu: Identifiable {
     let id = UUID()
@@ -20,6 +21,7 @@ enum ViewType {
     case textCopy
     case homeList
     case cardAnimation
+    case imageZoom
     case other
 }
 
@@ -27,6 +29,7 @@ let menuData = [Menu(type: .text, title: "Text视图的段落属性", color: .gr
                 Menu(type: .textCopy, title: "TextCopy", color: .blue),
                 Menu(type: .homeList, title: "List", color: .red),
                 Menu(type: .cardAnimation, title: "卡片带动画", color: .red),
+                Menu(type: .imageZoom, title: "Image缩放", color: .orange),
                 Menu(type: .other, title: "Other", color: .yellow)]
 
 struct RowView: View {
@@ -65,8 +68,17 @@ struct HomePageView: View {
             return AnyView(HomeListView())
         case .cardAnimation:
             return AnyView(CardAnimationView())
+        case .imageZoom:
+            return AnyView(ImageZoom())
         default:
             return AnyView(ListFristPageView())
+        }
+    }
+    
+    func getJson() {
+        let sessionManager = Alamofire.Session()
+        sessionManager.request("", method: .get, parameters: [:], headers: nil).responseJSON { (response) in
+            
         }
     }
 }
