@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  SwiftUIPractice
+
+  Created by Mac on 2020/4/28.
+  Copyright © 2020 灵 Q. All rights reserved.
+*/
+
+
+CFBundleDisplayName = "SwiftUI进阶";

@@ -8,10 +8,10 @@
 
 import SwiftUI
 
-let items: [TabBarItem] = [TabBarItem(icon: "house.fill", title: "首页", color: .blue),
-                          TabBarItem(icon: "list.dash", title: "列表", color: .blue),
-                          TabBarItem(icon: "square.and.pencil", title: "编辑", color: .blue),
-                          TabBarItem(icon: "person.fill", title: "个人", color: .blue)]
+let items: [TabBarItem] = [TabBarItem(icon: "house.fill", title: "Tabar-Home-Title".localized, color: .blue),
+                           TabBarItem(icon: "list.dash", title: "Tabar-List-Title".localized, color: .blue),
+                           TabBarItem(icon: "square.and.pencil", title: "Tabar-Edit-Title".localized, color: .blue),
+                           TabBarItem(icon: "person.fill", title: "Tabar-Personal-Title".localized, color: .blue)]
 
 /// 自定义tabBarItem
 struct AppView: View {
@@ -51,28 +51,28 @@ struct TabViews: View {
             HomePageView().tabItem {
                 VStack {
                     Image(systemName: "house.fill")
-                    Text("首页")
+                    Text("Tabar-Home-Title".localized)
                 }
             }
             
             ListFristPageView().tabItem {
                 VStack {
                     Image(systemName: "list.dash")
-                    Text("列表")
+                    Text("Tabar-List-Title".localized)
                 }
             }
             
             EditFristPageView().tabItem {
                 VStack {
                     Image(systemName: "square.and.pencil")
-                    Text("编辑")
+                    Text("Tabar-Edit-Title".localized)
                 }
             }
             
             MyClassPageView().tabItem {
                 VStack {
                     Image(systemName: "person.fill")
-                    Text("个人")
+                    Text("Tabar-Personal-Title".localized)
                 }
             }
         }

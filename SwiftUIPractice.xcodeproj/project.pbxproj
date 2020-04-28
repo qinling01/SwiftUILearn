@@ -16,6 +16,8 @@
 		044F162D24517E13000B06E5 /* CardAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F162C24517E13000B06E5 /* CardAnimationView.swift */; };
 		044F961424558FF500ECDFDB /* HSMNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F961324558FF500ECDFDB /* HSMNetWork.swift */; };
 		044F96162455904B00ECDFDB /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F96152455904B00ECDFDB /* Define.swift */; };
+		0460268E2457DCC700B69389 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 046026902457DCC700B69389 /* Localizable.strings */; };
+		0460269F24580AED00B69389 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 046026A124580AED00B69389 /* InfoPlist.strings */; };
 		27EB0E2B7B24D098DAB4E435 /* Pods_SwiftUIPractice_SwiftUIPracticeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31B1B11FEB83BED60F72E90 /* Pods_SwiftUIPractice_SwiftUIPracticeUITests.framework */; };
 		3C4C8D80243D658F0000F68A /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C8D7F243D658F0000F68A /* HomePageView.swift */; };
 		3C4C8D82243D65A00000F68A /* MyClassPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C8D81243D65A00000F68A /* MyClassPageView.swift */; };
@@ -69,6 +71,13 @@
 		044F162C24517E13000B06E5 /* CardAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAnimationView.swift; sourceTree = "<group>"; };
 		044F961324558FF500ECDFDB /* HSMNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSMNetWork.swift; sourceTree = "<group>"; };
 		044F96152455904B00ECDFDB /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
+		0460268F2457DCC700B69389 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		046026912457DCC900B69389 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		0460269B24580A5B00B69389 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		0460269C24580A6300B69389 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		046026A024580AED00B69389 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		046026A224580AEE00B69389 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		046026A3245815C500B69389 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		31FBD951C8664BF9FFA4304D /* Pods-SwiftUIPracticeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIPracticeTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIPracticeTests/Pods-SwiftUIPracticeTests.release.xcconfig"; sourceTree = "<group>"; };
 		3C4C8D7F243D658F0000F68A /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		3C4C8D81243D65A00000F68A /* MyClassPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassPageView.swift; sourceTree = "<group>"; };
@@ -76,7 +85,7 @@
 		3C4E90AE24404F56000860C3 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		3C4E90B024405012000860C3 /* TabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
 		3C4E90B224405356000860C3 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
-		3C5F8F11243AE90D007012A4 /* SwiftUIPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C5F8F11243AE90D007012A4 /* SwiftUI进阶.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI进阶.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C5F8F14243AE90D007012A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C5F8F16243AE90D007012A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3C5F8F18243AE90D007012A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -145,8 +154,18 @@
 			children = (
 				044F961324558FF500ECDFDB /* HSMNetWork.swift */,
 				0448DA492456D67300DD52D2 /* ExtensionMethod.swift */,
+				046026A3245815C500B69389 /* TestPlan.xctestplan */,
 			);
 			path = NetTools;
+			sourceTree = "<group>";
+		};
+		046026832457DBBB00B69389 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				046026A124580AED00B69389 /* InfoPlist.strings */,
+				046026902457DCC700B69389 /* Localizable.strings */,
+			);
+			path = Localizable;
 			sourceTree = "<group>";
 		};
 		3C4C8D7D243D65420000F68A /* HomePage */ = {
@@ -192,7 +211,7 @@
 		3C5F8F12243AE90D007012A4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3C5F8F11243AE90D007012A4 /* SwiftUIPractice.app */,
+				3C5F8F11243AE90D007012A4 /* SwiftUI进阶.app */,
 				3C5F8F27243AE912007012A4 /* SwiftUIPracticeTests.xctest */,
 				3C5F8F32243AE912007012A4 /* SwiftUIPracticeUITests.xctest */,
 			);
@@ -203,19 +222,20 @@
 			isa = PBXGroup;
 			children = (
 				044E6FD824501F3900B68BBE /* ImageResources */,
+				046026832457DBBB00B69389 /* Localizable */,
 				044F961224558FE200ECDFDB /* NetTools */,
 				3C4E90AD24404F32000860C3 /* TabBarView */,
 				3C4C8D7D243D65420000F68A /* HomePage */,
 				3C9C99A92440612F0084393A /* ListViewPage */,
 				3C9C99AA2440616E0084393A /* EditPage */,
 				3C4C8D7E243D65520000F68A /* MyClassPage */,
+				3C5F8F1A243AE912007012A4 /* Assets.xcassets */,
 				3C5F8F14243AE90D007012A4 /* AppDelegate.swift */,
 				3C5F8F16243AE90D007012A4 /* SceneDelegate.swift */,
 				3C5F8F18243AE90D007012A4 /* ContentView.swift */,
 				044F96152455904B00ECDFDB /* Define.swift */,
-				3C5F8F1A243AE912007012A4 /* Assets.xcassets */,
-				3C5F8F1F243AE912007012A4 /* LaunchScreen.storyboard */,
 				3C5F8F22243AE912007012A4 /* Info.plist */,
+				3C5F8F1F243AE912007012A4 /* LaunchScreen.storyboard */,
 				3C5F8F1C243AE912007012A4 /* Preview Content */,
 				3C5F8F44243C1AA6007012A4 /* CircleImage.swift */,
 				3C5F8F46243C2892007012A4 /* MapView.swift */,
@@ -319,7 +339,7 @@
 			);
 			name = SwiftUIPractice;
 			productName = SwiftUIPractice;
-			productReference = 3C5F8F11243AE90D007012A4 /* SwiftUIPractice.app */;
+			productReference = 3C5F8F11243AE90D007012A4 /* SwiftUI进阶.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3C5F8F26243AE912007012A4 /* SwiftUIPracticeTests */ = {
@@ -391,6 +411,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 3C5F8F08243AE90D007012A4;
 			productRefGroup = 3C5F8F12243AE90D007012A4 /* Products */;
@@ -410,6 +431,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				044E6FDB24501F6C00B68BBE /* explore_collection@2x.png in Resources */,
+				0460269F24580AED00B69389 /* InfoPlist.strings in Resources */,
+				0460268E2457DCC700B69389 /* Localizable.strings in Resources */,
 				3C5F8F21243AE912007012A4 /* LaunchScreen.storyboard in Resources */,
 				3C5F8F1E243AE912007012A4 /* Preview Assets.xcassets in Resources */,
 				044E6FDC24501F6C00B68BBE /* explore_uncollected@2x.png in Resources */,
@@ -597,10 +620,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		046026902457DCC700B69389 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0460268F2457DCC700B69389 /* en */,
+				046026912457DCC900B69389 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		046026A124580AED00B69389 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				046026A024580AED00B69389 /* en */,
+				046026A224580AEE00B69389 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		3C5F8F1F243AE912007012A4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3C5F8F20243AE912007012A4 /* Base */,
+				0460269B24580A5B00B69389 /* en */,
+				0460269C24580A6300B69389 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -612,6 +655,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -672,6 +716,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -738,7 +783,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yunhuakeji.com.SwiftUIPractice;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SwiftUI进阶";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -760,7 +805,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yunhuakeji.com.SwiftUIPractice;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "SwiftUI进阶";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

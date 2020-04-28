@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "3D6E3E35-C175-49B2-BE43-0D50BE236773",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    },
+    {
+      "id" : "0E2C30FD-DCB7-442A-949F-17F1683090FF",
+      "name" : "Configuration 2",
+      "options" : {
+        "language" : "en"
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "language" : "zh-Hans"
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}

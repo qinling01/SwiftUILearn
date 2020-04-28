@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  SwiftUIPractice
+
+  Created by Mac on 2020/4/28.
+  Copyright © 2020 灵 Q. All rights reserved.
+*/
+
+"Tabar-Home-Title" = "首页";
+"Tabar-List-Title" = "列表";
+"Tabar-Edit-Title" = "编辑";
+"Tabar-Personal-Title" = "个人";
+
+"Home-ListText-Title" = "Text视图的段落属性";
+"Home-ListText-Copy-Title" = "Text复制";
+"Home-List-Exercise-Title" = "List练习";
+"Home-CarAnimation-Title" = "卡片带动画";
+"Home-ImageGesture-Title" = "图片操作手势练习";
+"Home-Other-Title" = "其他";
