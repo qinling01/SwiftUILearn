@@ -25,12 +25,12 @@ enum ViewType {
     case other
 }
 
-let menuData = [Menu(type: .text, title: "Home-ListText-Title".localized, color: .green),
-                Menu(type: .textCopy, title: "Home-ListText-Copy-Title".localized, color: .blue),
-                Menu(type: .homeList, title: "Home-List-Exercise-Title".localized, color: .red),
-                Menu(type: .cardAnimation, title: "Home-CarAnimation-Title".localized, color: .red),
-                Menu(type: .imageZoom, title: "Home-ImageGesture-Title".localized, color: .orange),
-                Menu(type: .other, title: "Home-Other-Title".localized, color: .yellow)]
+let menuData = [Menu(type: .text, title: "Home-ListText.text".localized, color: .green),
+                Menu(type: .textCopy, title: "Home-ListText-Copy.text".localized, color: .blue),
+                Menu(type: .homeList, title: "Home-List-Exercise.text".localized, color: .red),
+                Menu(type: .cardAnimation, title: "Home-CarAnimation.text".localized, color: .red),
+                Menu(type: .imageZoom, title: "Home-ImageGesture.text".localized, color: .orange),
+                Menu(type: .other, title: "Home-Other.text".localized, color: .yellow)]
 
 struct RowView: View {
     var item: Menu

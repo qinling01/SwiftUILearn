@@ -6,14 +6,14 @@
   Copyright © 2020 灵 Q. All rights reserved.
 */
 
-"Tabar-Home-Title" = "Home";
-"Tabar-List-Title" = "List";
-"Tabar-Edit-Title" = "Edit";
-"Tabar-Personal-Title" = "Personal";
+"Tabar-Home.text" = "Home";
+"Tabar-List.text" = "List";
+"Tabar-Edit.text" = "Edit";
+"Tabar-Personal.text" = "Personal";
 
-"Home-ListText-Title" = "Text Attribute Connection";
-"Home-ListText-Copy-Title" = "Text Copy";
-"Home-List-Exercise-Title" = "List Exercise";
-"Home-CarAnimation-Title" = "Car And Animation";
-"Home-ImageGesture-Title" = "Image Gesture Exercise";
-"Home-Other-Title" = "Other";
+"Home-ListText.text" = "Text Attribute Connection";
+"Home-ListText-Copy.text" = "Text Copy";
+"Home-List-Exercise.text" = "List Exercise";
+"Home-CarAnimation.text" = "Car And Animation";
+"Home-ImageGesture.text" = "Image Gesture Exercise";
+"Home-Other.text" = "Other";

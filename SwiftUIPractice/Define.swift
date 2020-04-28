@@ -15,6 +15,17 @@ public let Sbounds = UIScreen.main.bounds
 public let Swidth = UIScreen.main.bounds.width
 public let Sheight = UIScreen.main.bounds.height
 
+/// 除去导航栏页面高度
+public let SheightWithin = Sheight-SafeAreaNavHeight
+/// 导航栏高度
+public let SafeAreaNavHeight: CGFloat = UIDevice.current.isiPhoneXMore() ? 88.0 : 64.0
+/// 状态栏高度
+public let SafeAreaNavHeightTop: CGFloat = UIDevice.current.isiPhoneXMore() ? 44.0 : 20.0
+/// 底部距边高度（iPhoneX）
+public let SafeAreaBottomHeight: CGFloat = UIDevice.current.isiPhoneXMore() ? 34.0 : 0.0
+/// 工具栏高度
+public let SafeAreaTabBarHeight: CGFloat = UIDevice.current.isiPhoneXMore() ? 83.0 : 49.0
+
 //封装的日志输出功能（T表示不指定日志信息参数类型）
 public func printL(_ items: Any..., methodName: String = #function, lineNumber: Int = #line, isMethodName: Bool = true) {
     //s文件名、方法、行号、打印信息

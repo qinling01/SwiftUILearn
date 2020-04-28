@@ -8,10 +8,10 @@
 
 import SwiftUI
 
-let items: [TabBarItem] = [TabBarItem(icon: "house.fill", title: "Tabar-Home-Title".localized, color: .blue),
-                           TabBarItem(icon: "list.dash", title: "Tabar-List-Title".localized, color: .blue),
-                           TabBarItem(icon: "square.and.pencil", title: "Tabar-Edit-Title".localized, color: .blue),
-                           TabBarItem(icon: "person.fill", title: "Tabar-Personal-Title".localized, color: .blue)]
+let items: [TabBarItem] = [TabBarItem(icon: "house.fill", title: "Tabar-Home.text".localized, color: .blue),
+                           TabBarItem(icon: "list.dash", title: "Tabar-List.text".localized, color: .red),
+                           TabBarItem(icon: "square.and.pencil", title: "Tabar-Edit.text".localized, color: .orange),
+                           TabBarItem(icon: "person.fill", title: "Tabar-Personal.text".localized, color: .green)]
 
 /// 自定义tabBarItem
 struct AppView: View {
@@ -51,28 +51,28 @@ struct TabViews: View {
             HomePageView().tabItem {
                 VStack {
                     Image(systemName: "house.fill")
-                    Text("Tabar-Home-Title".localized)
+                    Text("Tabar-Home.text".localized)
                 }
             }
             
             ListFristPageView().tabItem {
                 VStack {
                     Image(systemName: "list.dash")
-                    Text("Tabar-List-Title".localized)
+                    Text("Tabar-List.text".localized)
                 }
             }
             
             EditFristPageView().tabItem {
                 VStack {
                     Image(systemName: "square.and.pencil")
-                    Text("Tabar-Edit-Title".localized)
+                    Text("Tabar-Edit.text".localized)
                 }
             }
             
             MyClassPageView().tabItem {
                 VStack {
                     Image(systemName: "person.fill")
-                    Text("Tabar-Personal-Title".localized)
+                    Text("Tabar-Personal.text".localized)
                 }
             }
         }

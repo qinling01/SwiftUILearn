@@ -30,3 +30,10 @@ extension String {
         return NSLocalizedString(self, comment: "")
     }
 }
+
+extension UIDevice {
+    /// 判断X以上机型
+    func isiPhoneXMore() -> Bool {
+        return UIApplication.shared.windows.first?.safeAreaInsets.bottom ?? 0.0 > 0.0 ? true : false
+    }
+}
