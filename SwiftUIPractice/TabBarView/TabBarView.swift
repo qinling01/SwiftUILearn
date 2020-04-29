@@ -10,7 +10,8 @@ import SwiftUI
 
 struct TabBarView: View {
     @Binding var selectedIndex: Int
-    let items: [TabBarItem]
+    @State var isSelectIndex: Bool = false
+    @State var items: [TabBarItem] = []
     
     var body: some View {
         VStack {
@@ -32,7 +33,8 @@ struct TabBarView: View {
         Button.init(action: {
             self.selectedIndex = index
         }, label: {
-            TabBarItemView(isSelected: .constant(self.selectedIndex == index ? true : false), item: items[index])
+            TabBarItemView(selectedIndex: self.$selectedIndex, item: items[index])
+                .tag(index)
         })
     }
 }
@@ -40,9 +42,9 @@ struct TabBarView: View {
 struct TabBarView_Previews: PreviewProvider {
     static var previews: some View {
         TabBarView(selectedIndex: .constant(0), items: [
-            TabBarItem(icon: "house", title: "首页", color: .red),
-            TabBarItem(icon: "heart", title: "最爱", color: .red),
-            TabBarItem(icon: "heart", title: "最爱", color: .red),
-            TabBarItem(icon: "heart", title: "最爱", color: .red)])
+            TabBarItem(icon: "house", title: "首页", color: .red, index: 0),
+            TabBarItem(icon: "heart", title: "最爱", color: .red, index: 1),
+            TabBarItem(icon: "heart", title: "最爱", color: .red, index: 2),
+            TabBarItem(icon: "heart", title: "最爱", color: .red, index: 3)])
     }
 }

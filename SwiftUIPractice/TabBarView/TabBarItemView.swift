@@ -9,16 +9,16 @@
 import SwiftUI
 
 struct TabBarItemView: View {
-    @Binding var isSelected: Bool
-    public let item: TabBarItem
+    @Binding var selectedIndex: Int
+    var item: TabBarItem
     
     var body: some View {
         VStack {
             Image(systemName: item.icon)
                 .imageScale(.large)
-                .foregroundColor(isSelected ? item.color : .primary)
+                .foregroundColor(selectedIndex == item.index ? item.color : defalutColor())
             Text(item.title)
-                .foregroundColor(isSelected ? item.color : .primary)
+                .foregroundColor(selectedIndex == item.index ? item.color : defalutColor())
                 .font(.system(size: 12))
 //                .padding(.top, 5.0)
                 //baselineOffset--设置垂直方向偏移值
@@ -26,11 +26,15 @@ struct TabBarItemView: View {
         }
         .padding()
     }
+    
+    func defalutColor() -> Color{
+        return .primary
+    }
 }
 
 struct TabBarItemView_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarItemView(isSelected: .constant(true), item: TabBarItem(icon: "house", title: "首页", color: .blue))
+        TabBarItemView(selectedIndex: .constant(0), item: TabBarItem(icon: "house", title: "首页", color: .blue, index: 0))
     }
 }
 

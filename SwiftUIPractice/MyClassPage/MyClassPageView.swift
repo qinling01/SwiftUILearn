@@ -18,6 +18,7 @@ struct MyClassPageView: View {
     }
 }
 
+
 struct MyClassPageView_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone XS Max", "iPhone 8"], id: \.self) { deviceName in

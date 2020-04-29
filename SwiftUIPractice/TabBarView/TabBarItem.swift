@@ -12,10 +12,12 @@ struct TabBarItem {
     public let icon: String
     public let title: String
     public let color: Color
+    public var index: Int
     
-    init(icon: String, title: String, color: Color) {
+    init(icon: String, title: String, color: Color, index: Int) {
         self.icon = icon
         self.title = title
         self.color = color
+        self.index = index
     }
 }

@@ -8,10 +8,10 @@
 
 import SwiftUI
 
-let items: [TabBarItem] = [TabBarItem(icon: "house.fill", title: "Tabar-Home.text".localized, color: .blue),
-                           TabBarItem(icon: "list.dash", title: "Tabar-List.text".localized, color: .red),
-                           TabBarItem(icon: "square.and.pencil", title: "Tabar-Edit.text".localized, color: .orange),
-                           TabBarItem(icon: "person.fill", title: "Tabar-Personal.text".localized, color: .green)]
+let items: [TabBarItem] = [TabBarItem(icon: "house.fill", title: "Tabar-Home.text".localized, color: .blue, index: 0),
+                           TabBarItem(icon: "list.dash", title: "Tabar-List.text".localized, color: .red, index: 1),
+                           TabBarItem(icon: "square.and.pencil", title: "Tabar-Edit.text".localized, color: .orange, index: 2),
+                           TabBarItem(icon: "person.fill", title: "Tabar-Personal.text".localized, color: .green, index: 3)]
 
 /// 自定义tabBarItem
 struct AppView: View {
