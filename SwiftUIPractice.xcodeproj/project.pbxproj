@@ -18,6 +18,9 @@
 		044F96162455904B00ECDFDB /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F96152455904B00ECDFDB /* Define.swift */; };
 		0460268E2457DCC700B69389 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 046026902457DCC700B69389 /* Localizable.strings */; };
 		0460269F24580AED00B69389 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 046026A124580AED00B69389 /* InfoPlist.strings */; };
+		046713E42463B28400A3444D /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046713E32463B28400A3444D /* GeometryReaderView.swift */; };
+		046713EC2463E9A600A3444D /* QLSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046713EB2463E9A600A3444D /* QLSearchBar.swift */; };
+		046713EE2463E9C200A3444D /* QLSearchBarContanierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046713ED2463E9C200A3444D /* QLSearchBarContanierView.swift */; };
 		27EB0E2B7B24D098DAB4E435 /* Pods_SwiftUIPractice_SwiftUIPracticeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B31B1B11FEB83BED60F72E90 /* Pods_SwiftUIPractice_SwiftUIPracticeUITests.framework */; };
 		3C4C8D80243D658F0000F68A /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C8D7F243D658F0000F68A /* HomePageView.swift */; };
 		3C4C8D82243D65A00000F68A /* MyClassPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4C8D81243D65A00000F68A /* MyClassPageView.swift */; };
@@ -77,7 +80,9 @@
 		0460269C24580A6300B69389 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		046026A024580AED00B69389 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		046026A224580AEE00B69389 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		046026A3245815C500B69389 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
+		046713E32463B28400A3444D /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
+		046713EB2463E9A600A3444D /* QLSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QLSearchBar.swift; sourceTree = "<group>"; };
+		046713ED2463E9C200A3444D /* QLSearchBarContanierView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QLSearchBarContanierView.swift; sourceTree = "<group>"; };
 		31FBD951C8664BF9FFA4304D /* Pods-SwiftUIPracticeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIPracticeTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIPracticeTests/Pods-SwiftUIPracticeTests.release.xcconfig"; sourceTree = "<group>"; };
 		3C4C8D7F243D658F0000F68A /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
 		3C4C8D81243D65A00000F68A /* MyClassPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClassPageView.swift; sourceTree = "<group>"; };
@@ -85,7 +90,7 @@
 		3C4E90AE24404F56000860C3 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		3C4E90B024405012000860C3 /* TabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemView.swift; sourceTree = "<group>"; };
 		3C4E90B224405356000860C3 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
-		3C5F8F11243AE90D007012A4 /* SwiftUI进阶.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI进阶.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C5F8F11243AE90D007012A4 /* SwiftUIPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C5F8F14243AE90D007012A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C5F8F16243AE90D007012A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3C5F8F18243AE90D007012A4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -154,7 +159,6 @@
 			children = (
 				044F961324558FF500ECDFDB /* HSMNetWork.swift */,
 				0448DA492456D67300DD52D2 /* ExtensionMethod.swift */,
-				046026A3245815C500B69389 /* TestPlan.xctestplan */,
 			);
 			path = NetTools;
 			sourceTree = "<group>";
@@ -166,6 +170,15 @@
 				046026902457DCC700B69389 /* Localizable.strings */,
 			);
 			path = Localizable;
+			sourceTree = "<group>";
+		};
+		046713EA2463E7EC00A3444D /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				046713EB2463E9A600A3444D /* QLSearchBar.swift */,
+				046713ED2463E9C200A3444D /* QLSearchBarContanierView.swift */,
+			);
+			path = SearchBar;
 			sourceTree = "<group>";
 		};
 		3C4C8D7D243D65420000F68A /* HomePage */ = {
@@ -211,7 +224,7 @@
 		3C5F8F12243AE90D007012A4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3C5F8F11243AE90D007012A4 /* SwiftUI进阶.app */,
+				3C5F8F11243AE90D007012A4 /* SwiftUIPractice.app */,
 				3C5F8F27243AE912007012A4 /* SwiftUIPracticeTests.xctest */,
 				3C5F8F32243AE912007012A4 /* SwiftUIPracticeUITests.xctest */,
 			);
@@ -280,6 +293,7 @@
 		3C9C99AA2440616E0084393A /* EditPage */ = {
 			isa = PBXGroup;
 			children = (
+				046713EA2463E7EC00A3444D /* SearchBar */,
 				3C9C99AD2440621B0084393A /* EditFristPageView.swift */,
 			);
 			path = EditPage;
@@ -293,6 +307,7 @@
 				044E6FD624501BF000B68BBE /* HomeListView.swift */,
 				044F162C24517E13000B06E5 /* CardAnimationView.swift */,
 				0448DA472456801900DD52D2 /* ImageZoom.swift */,
+				046713E32463B28400A3444D /* GeometryReaderView.swift */,
 			);
 			path = Page;
 			sourceTree = "<group>";
@@ -339,7 +354,7 @@
 			);
 			name = SwiftUIPractice;
 			productName = SwiftUIPractice;
-			productReference = 3C5F8F11243AE90D007012A4 /* SwiftUI进阶.app */;
+			productReference = 3C5F8F11243AE90D007012A4 /* SwiftUIPractice.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3C5F8F26243AE912007012A4 /* SwiftUIPracticeTests */ = {
@@ -570,6 +585,7 @@
 				3C5F8F45243C1AA6007012A4 /* CircleImage.swift in Sources */,
 				0448DA4A2456D67300DD52D2 /* ExtensionMethod.swift in Sources */,
 				3C9C99AE2440621B0084393A /* EditFristPageView.swift in Sources */,
+				046713EC2463E9A600A3444D /* QLSearchBar.swift in Sources */,
 				3C4C8D82243D65A00000F68A /* MyClassPageView.swift in Sources */,
 				0448DA482456801900DD52D2 /* ImageZoom.swift in Sources */,
 				3C4E90B124405012000860C3 /* TabBarItemView.swift in Sources */,
@@ -577,6 +593,7 @@
 				3C5F8F47243C2892007012A4 /* MapView.swift in Sources */,
 				3CEE8FAD244461E200E4F7BB /* TextSettingAttribute.swift in Sources */,
 				3C4C8D84243D7C6C0000F68A /* MyClassInformationView.swift in Sources */,
+				046713E42463B28400A3444D /* GeometryReaderView.swift in Sources */,
 				3C5F8F17243AE90D007012A4 /* SceneDelegate.swift in Sources */,
 				3C4C8D80243D658F0000F68A /* HomePageView.swift in Sources */,
 				044E6FD724501BF000B68BBE /* HomeListView.swift in Sources */,
@@ -585,6 +602,7 @@
 				3C5F8F19243AE90D007012A4 /* ContentView.swift in Sources */,
 				044F96162455904B00ECDFDB /* Define.swift in Sources */,
 				044F162D24517E13000B06E5 /* CardAnimationView.swift in Sources */,
+				046713EE2463E9C200A3444D /* QLSearchBarContanierView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,7 +801,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yunhuakeji.com.SwiftUIPractice;
-				PRODUCT_NAME = "SwiftUI进阶";
+				PRODUCT_NAME = SwiftUIPractice;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -805,7 +823,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yunhuakeji.com.SwiftUIPractice;
-				PRODUCT_NAME = "SwiftUI进阶";
+				PRODUCT_NAME = SwiftUIPractice;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -22,6 +22,7 @@ enum ViewType {
     case homeList
     case cardAnimation
     case imageZoom
+    case geometryReader
     case other
 }
 
@@ -30,6 +31,7 @@ let menuData = [Menu(type: .text, title: "Home-ListText.text".localized, color: 
                 Menu(type: .homeList, title: "Home-List-Exercise.text".localized, color: .red),
                 Menu(type: .cardAnimation, title: "Home-CarAnimation.text".localized, color: .red),
                 Menu(type: .imageZoom, title: "Home-ImageGesture.text".localized, color: .orange),
+                Menu(type: .geometryReader, title: "Home-GeometryReader.text".localized, color: .secondary),
                 Menu(type: .other, title: "Home-Other.text".localized, color: .yellow)]
 
 struct RowView: View {
@@ -70,6 +72,8 @@ struct HomePageView: View {
             return AnyView(CardAnimationView())
         case .imageZoom:
             return AnyView(ImageZoom())
+        case .geometryReader:
+            return AnyView(GeometryReaderView())
         default:
             return AnyView(ListFristPageView())
         }

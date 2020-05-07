@@ -9,8 +9,21 @@
 import SwiftUI
 
 struct EditFristPageView: View {
+    
+    @State private var showingSeachBar = false
+    
+    @State private var inputText = ""
+    
     var body: some View {
-        Text("hello")
+        VStack {
+            QLSearchBar(text: $inputText, cancle: {
+                
+            }) { (searText) in
+                
+            }
+            .padding(.leading, 10)
+            .padding(.trailing, 0)
+        }
     }
 }
 
