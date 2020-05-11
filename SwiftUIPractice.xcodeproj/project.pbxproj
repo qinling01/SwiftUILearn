@@ -9,10 +9,20 @@
 /* Begin PBXBuildFile section */
 		0448DA482456801900DD52D2 /* ImageZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448DA472456801900DD52D2 /* ImageZoom.swift */; };
 		0448DA4A2456D67300DD52D2 /* ExtensionMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0448DA492456D67300DD52D2 /* ExtensionMethod.swift */; };
+		0449396E24664978006D31E3 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0449396D24664978006D31E3 /* CloudKit.framework */; };
+		044939BA24665EE2006D31E3 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044939B924665EE2006D31E3 /* InputView.swift */; };
+		044C486A2469254B00D55811 /* CustomTextFiledView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044C48692469254B00D55811 /* CustomTextFiledView.swift */; };
 		044CCCD2244EFF20001C1CB6 /* TextCopyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CCCD1244EFF20001C1CB6 /* TextCopyView.swift */; };
 		044E6FD724501BF000B68BBE /* HomeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E6FD624501BF000B68BBE /* HomeListView.swift */; };
 		044E6FDB24501F6C00B68BBE /* explore_collection@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044E6FD924501F6C00B68BBE /* explore_collection@2x.png */; };
 		044E6FDC24501F6C00B68BBE /* explore_uncollected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 044E6FDA24501F6C00B68BBE /* explore_uncollected@2x.png */; };
+		044ED12C2464EEE3006DE257 /* QLSquareListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044ED12B2464EEE3006DE257 /* QLSquareListView.swift */; };
+		044ED12E2464EF0F006DE257 /* QLSquareListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044ED12D2464EF0F006DE257 /* QLSquareListCell.swift */; };
+		044ED1312464EF5C006DE257 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044ED1302464EF5C006DE257 /* Article.swift */; };
+		044ED1362464FAFB006DE257 /* SwiftUIPractice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 044ED1342464FAFB006DE257 /* SwiftUIPractice.xcdatamodeld */; };
+		044ED1382464FC12006DE257 /* QLCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044ED1372464FC12006DE257 /* QLCoreData.swift */; };
+		044ED13B2465023E006DE257 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044ED13A2465023D006DE257 /* Utilities.swift */; };
+		044ED13F246507BD006DE257 /* AritcleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044ED13E246507BD006DE257 /* AritcleManager.swift */; };
 		044F162D24517E13000B06E5 /* CardAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F162C24517E13000B06E5 /* CardAnimationView.swift */; };
 		044F961424558FF500ECDFDB /* HSMNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F961324558FF500ECDFDB /* HSMNetWork.swift */; };
 		044F96162455904B00ECDFDB /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044F96152455904B00ECDFDB /* Define.swift */; };
@@ -67,10 +77,20 @@
 		02E2853FAB3632209BF9863C /* Pods-SwiftUIPractice-SwiftUIPracticeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIPractice-SwiftUIPracticeUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIPractice-SwiftUIPracticeUITests/Pods-SwiftUIPractice-SwiftUIPracticeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		0448DA472456801900DD52D2 /* ImageZoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoom.swift; sourceTree = "<group>"; };
 		0448DA492456D67300DD52D2 /* ExtensionMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionMethod.swift; sourceTree = "<group>"; };
+		0449396D24664978006D31E3 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		044939B924665EE2006D31E3 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		044C48692469254B00D55811 /* CustomTextFiledView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFiledView.swift; sourceTree = "<group>"; };
 		044CCCD1244EFF20001C1CB6 /* TextCopyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCopyView.swift; sourceTree = "<group>"; };
 		044E6FD624501BF000B68BBE /* HomeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeListView.swift; sourceTree = "<group>"; };
 		044E6FD924501F6C00B68BBE /* explore_collection@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explore_collection@2x.png"; sourceTree = "<group>"; };
 		044E6FDA24501F6C00B68BBE /* explore_uncollected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "explore_uncollected@2x.png"; sourceTree = "<group>"; };
+		044ED12B2464EEE3006DE257 /* QLSquareListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QLSquareListView.swift; sourceTree = "<group>"; };
+		044ED12D2464EF0F006DE257 /* QLSquareListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QLSquareListCell.swift; sourceTree = "<group>"; };
+		044ED1302464EF5C006DE257 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		044ED1352464FAFB006DE257 /* SwiftUIPractice.xcdatamodel */ = {isa = PBXFileReference; explicitFileType = wrapper.xcdatamodel; path = SwiftUIPractice.xcdatamodel; sourceTree = "<group>"; };
+		044ED1372464FC12006DE257 /* QLCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QLCoreData.swift; sourceTree = "<group>"; };
+		044ED13A2465023D006DE257 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		044ED13E246507BD006DE257 /* AritcleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AritcleManager.swift; sourceTree = "<group>"; };
 		044F162C24517E13000B06E5 /* CardAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAnimationView.swift; sourceTree = "<group>"; };
 		044F961324558FF500ECDFDB /* HSMNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSMNetWork.swift; sourceTree = "<group>"; };
 		044F96152455904B00ECDFDB /* Define.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Define.swift; sourceTree = "<group>"; };
@@ -123,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F276D67AF2602B6F22E7250 /* Pods_SwiftUIPractice.framework in Frameworks */,
+				0449396E24664978006D31E3 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +166,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044939B824665EC2006D31E3 /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				044939B924665EE2006D31E3 /* InputView.swift */,
+				044C48692469254B00D55811 /* CustomTextFiledView.swift */,
+			);
+			path = InputView;
+			sourceTree = "<group>";
+		};
 		044E6FD824501F3900B68BBE /* ImageResources */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +182,41 @@
 				044E6FDA24501F6C00B68BBE /* explore_uncollected@2x.png */,
 			);
 			path = ImageResources;
+			sourceTree = "<group>";
+		};
+		044ED12A2464EED0006DE257 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				044ED12B2464EEE3006DE257 /* QLSquareListView.swift */,
+				044ED12D2464EF0F006DE257 /* QLSquareListCell.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		044ED12F2464EF55006DE257 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				044ED1302464EF5C006DE257 /* Article.swift */,
+				044ED13E246507BD006DE257 /* AritcleManager.swift */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
+		044ED1322464F591006DE257 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				044ED1342464FAFB006DE257 /* SwiftUIPractice.xcdatamodeld */,
+				044ED1372464FC12006DE257 /* QLCoreData.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		044ED1392465023D006DE257 /* Utilis */ = {
+			isa = PBXGroup;
+			children = (
+				044ED13A2465023D006DE257 /* Utilities.swift */,
+			);
+			path = Utilis;
 			sourceTree = "<group>";
 		};
 		044F961224558FE200ECDFDB /* NetTools */ = {
@@ -293,6 +358,11 @@
 		3C9C99AA2440616E0084393A /* EditPage */ = {
 			isa = PBXGroup;
 			children = (
+				044ED1392465023D006DE257 /* Utilis */,
+				044ED1322464F591006DE257 /* CoreData */,
+				044ED12F2464EF55006DE257 /* Article */,
+				044939B824665EC2006D31E3 /* InputView */,
+				044ED12A2464EED0006DE257 /* List */,
 				046713EA2463E7EC00A3444D /* SearchBar */,
 				3C9C99AD2440621B0084393A /* EditFristPageView.swift */,
 			);
@@ -328,6 +398,7 @@
 		AD7BC5DAD2D6ACA66278024B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0449396D24664978006D31E3 /* CloudKit.framework */,
 				BB93D7D2B96A985292C54EA4 /* Pods_SwiftUIPractice.framework */,
 				B31B1B11FEB83BED60F72E90 /* Pods_SwiftUIPractice_SwiftUIPracticeUITests.framework */,
 				403467E9999309B16907DDA3 /* Pods_SwiftUIPracticeTests.framework */,
@@ -580,7 +651,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				044CCCD2244EFF20001C1CB6 /* TextCopyView.swift in Sources */,
+				044C486A2469254B00D55811 /* CustomTextFiledView.swift in Sources */,
 				3C5F8F15243AE90D007012A4 /* AppDelegate.swift in Sources */,
+				044ED1312464EF5C006DE257 /* Article.swift in Sources */,
 				3C4E90B324405356000860C3 /* TabBarView.swift in Sources */,
 				3C5F8F45243C1AA6007012A4 /* CircleImage.swift in Sources */,
 				0448DA4A2456D67300DD52D2 /* ExtensionMethod.swift in Sources */,
@@ -588,6 +661,8 @@
 				046713EC2463E9A600A3444D /* QLSearchBar.swift in Sources */,
 				3C4C8D82243D65A00000F68A /* MyClassPageView.swift in Sources */,
 				0448DA482456801900DD52D2 /* ImageZoom.swift in Sources */,
+				044ED12C2464EEE3006DE257 /* QLSquareListView.swift in Sources */,
+				044ED13F246507BD006DE257 /* AritcleManager.swift in Sources */,
 				3C4E90B124405012000860C3 /* TabBarItemView.swift in Sources */,
 				3C4E90AF24404F56000860C3 /* TabBarItem.swift in Sources */,
 				3C5F8F47243C2892007012A4 /* MapView.swift in Sources */,
@@ -595,13 +670,18 @@
 				3C4C8D84243D7C6C0000F68A /* MyClassInformationView.swift in Sources */,
 				046713E42463B28400A3444D /* GeometryReaderView.swift in Sources */,
 				3C5F8F17243AE90D007012A4 /* SceneDelegate.swift in Sources */,
+				044ED13B2465023E006DE257 /* Utilities.swift in Sources */,
 				3C4C8D80243D658F0000F68A /* HomePageView.swift in Sources */,
+				044939BA24665EE2006D31E3 /* InputView.swift in Sources */,
 				044E6FD724501BF000B68BBE /* HomeListView.swift in Sources */,
+				044ED12E2464EF0F006DE257 /* QLSquareListCell.swift in Sources */,
 				3C9C99AC2440620B0084393A /* ListFristPageView.swift in Sources */,
+				044ED1382464FC12006DE257 /* QLCoreData.swift in Sources */,
 				044F961424558FF500ECDFDB /* HSMNetWork.swift in Sources */,
 				3C5F8F19243AE90D007012A4 /* ContentView.swift in Sources */,
 				044F96162455904B00ECDFDB /* Define.swift in Sources */,
 				044F162D24517E13000B06E5 /* CardAnimationView.swift in Sources */,
+				044ED1362464FAFB006DE257 /* SwiftUIPractice.xcdatamodeld in Sources */,
 				046713EE2463E9C200A3444D /* QLSearchBarContanierView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -957,6 +1037,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		044ED1342464FAFB006DE257 /* SwiftUIPractice.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				044ED1352464FAFB006DE257 /* SwiftUIPractice.xcdatamodel */,
+			);
+			currentVersion = 044ED1352464FAFB006DE257 /* SwiftUIPractice.xcdatamodel */;
+			path = SwiftUIPractice.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3C5F8F09243AE90D007012A4 /* Project object */;
 }
