@@ -20,14 +20,20 @@ struct EditFristPageView: View {
         
         VStack {
             QLSearchBar(text: $inputText, cancle: {
-                
-            }) { (searText) in
-                
+                self.aritcleManager.reload()
+            }) {
+                self.aritcleManager.search(content: $0)
             }
             .padding(.leading, 10)
             .padding(.trailing, 0)
             
-            QLSquareListView(articles: $aritcleManager.articles)
+//            Button("这是测试点击") {
+//                self.showingInputView.toggle()
+//            }
+            
+            QLSquareListView(articles: $aritcleManager.articles) {
+                 self.aritcleManager.articles[$0].delete()
+            }
         }
         .navigationBarItems(leading:
             Button(action: {
@@ -36,23 +42,27 @@ struct EditFristPageView: View {
                 Image(systemName: "list.dash")
                 .imageScale(.large)
                 .foregroundColor(.primary)
+                .padding(.trailing, 40)
             })
-                .frame(width: 25, height: 25)
+                .frame(width: 60, height: 60)
+            
             , trailing:
             
             Button(action: {
+                print("..........")
                 self.showingInputView.toggle()
             }, label: {
                 Image(systemName: "square.and.pencil")
                     .imageScale(.large)
                     .foregroundColor(.primary)
+                    .padding(.leading, 40)
             })
-                .frame(width: 25, height: 25)
+                .frame(width: 60, height: 60)
         )
-            .sheet(isPresented: $showingInputView) {
-                InputView {
+            .sheet(isPresented: $showingInputView){
+                InputView(reloadCommit: {
                     self.showingInputView.toggle()
-                }
+                })
         }
     }
 }

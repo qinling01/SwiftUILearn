@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct InputView: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var reloadCommit: (() -> ())?
     
     @State private var textString: String = ""
@@ -35,7 +36,7 @@ struct InputView: View {
                 Spacer()
                 Button("添加") {
                     if self.textString == "" {
-                        self.showingAlert = true
+                        self.showingAlert.toggle()
                     }else{
                         QLCoreData.shared.persistentContainer.viewContext.performChanges {
                             var article = Article.ViewModel()
@@ -44,9 +45,11 @@ struct InputView: View {
                             article.createdAt = Date()
                             
                             _ = Article.insert(viewModel: article)
-                            
-                            self.reloadCommit?()
                         }
+                        
+                        //两种返回方式都可以
+//                        self.reloadCommit?()
+                        self.presentationMode.wrappedValue.dismiss()
                     }
                 }.alert(isPresented: $showingAlert) { () -> Alert in
                     Alert(title: Text("提示"), message: Text("文本内容不能为空"), dismissButton: .default(Text("确定")))

@@ -11,10 +11,15 @@ import SwiftUI
 struct QLSquareListView: View {
     @Binding var articles: [Article]
     
+    var onDelete: ((Int) -> ())?
+    
     var body: some View {
         List {
             ForEach(articles) { article in
                 QLSquareListCell(article: article)
+            }.onDelete {
+                guard let index = Array($0).first else { return }
+                self.onDelete?(index)
             }
         }
     }

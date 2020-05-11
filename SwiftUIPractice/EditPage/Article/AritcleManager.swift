@@ -13,7 +13,7 @@ class AritcleManager: NSObject, ObservableObject {
     
     var objectWillChange: ObservableObjectPublisher = ObservableObjectPublisher()
     var articles: [Article] = []
-//    var searchArticles = [Articles]()
+    var searchArticles = [Article]()
     
     fileprivate var fetchedResultsController: NSFetchedResultsController<Article>
     
@@ -31,6 +31,29 @@ class AritcleManager: NSObject, ObservableObject {
         try! fetchedResultsController.performFetch()
         articles = fetchedResultsController.fetchedObjects!
         objectWillChange.send()
+    }
+    
+    func search(content: String) {
+        let request = Article.searchRequest(content: content)
+        request.fetchBatchSize = 20
+        request.returnsObjectsAsFaults = false
+        QLCoreData.shared.persistentContainer.viewContext.performChanges {
+            self.articles = try! QLCoreData.shared.persistentContainer.viewContext.fetch(request)
+            self.searchArticles = self.articles
+            
+            self.objectWillChange.send()
+        }
+    }
+    
+    /// 重新载入
+    func reload() {
+        guard searchArticles == articles else { return }
+        
+        let request = Article.sortedFetchRequest
+        QLCoreData.shared.persistentContainer.viewContext.performChanges {
+            self.articles = try! QLCoreData.shared.persistentContainer.viewContext.fetch(request)
+            self.objectWillChange.send()
+        }
     }
 }
 
